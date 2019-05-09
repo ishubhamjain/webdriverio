@@ -1,0 +1,23 @@
+{
+  "name": "webdriverioframework",
+  "version": "1.0.0",
+  "description": "wedriver io framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio --logLevel=verbose",
+    "pretest": "echo pre test",
+    "debug": "cross-env-shell DEBUG=true ./node_modules/.bin/wdio wdio.conf.js --spec ./tests/ajaxClickTest.js",
+    "predebug": "echo cross-env-shell is used to use flag example DEBUG=true"
+  },
+  "author": "shubham jain",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.1.4",
+    "selenium-standalone": "^6.15.3",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "webdriverio": "^4.13.2",
+    "wdio-mocha-framework": "^0.6.4",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0"
+  }
+}
